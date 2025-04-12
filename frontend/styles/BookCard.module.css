@@ -1,0 +1,150 @@
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.bookImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .bookImage {
+  transform: scale(1.05);
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  color: #666;
+}
+
+.statusBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.author {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.details {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.condition, .genre {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.editButton {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.editButton:hover {
+  background: #bbdefb;
+}
+
+.deleteButton {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.deleteButton:hover {
+  background: #ffcdd2;
+}
+
+.toggleButton {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.toggleButton:hover {
+  background: #c8e6c9;
+}
+
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 160px;
+  }
+  
+  .title {
+    font-size: 16px;
+  }
+  
+  .actions {
+    flex-direction: column;
+  }
+  
+  .actionButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+  
