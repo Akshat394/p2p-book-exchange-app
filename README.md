@@ -1,136 +1,86 @@
-# P2P Book Exchange Application
+# P2P Book Exchange App
 
-A peer-to-peer book exchange platform that allows users to share, exchange, and discover books in their local communities.
+A peer-to-peer book exchange platform where users can list their books, search for books, and exchange them with other users.
 
 ## Features
 
-- **User Authentication**: Register as either a Book Owner or Book Seeker
-- **Book Management**: Add, edit, and delete books from your collection
-- **Book Search**: Search for books by title, author, or genre
-- **Filtering & Sorting**: Filter books by condition, availability, and more
-- **Book Exchanges**: Request and manage book exchanges with other users
-- **Responsive Design**: Works on desktop and mobile devices
+- User authentication (register/login)
+- Book listing and management
+- Book search and filtering
+- Book exchange requests
+- User profiles
+- Responsive design
 
 ## Tech Stack
 
-### Frontend
-- **React.js**: UI library for building the user interface
-- **Next.js**: React framework for server-side rendering and routing
-- **CSS Modules**: For component-scoped styling
-- **FontAwesome**: For icons throughout the application
+- Frontend: Next.js, React
+- Backend: Node.js, Express
+- Styling: CSS Modules
+- Icons: Font Awesome
 
-### Backend
-- **Node.js**: JavaScript runtime for the server
-- **Express.js**: Web framework for building the API
-- **JSON File Storage**: Simple file-based data storage
-- **JWT Authentication**: For secure user authentication
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
+## Setup Instructions
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/p2p-book-exchange-app.git
-   cd p2p-book-exchange-app
-   ```
+```bash
+git clone https://github.com/yourusername/p2p-book-exchange-app.git
+cd p2p-book-exchange-app
+```
 
-2. Install dependencies for both frontend and backend:
-   ```
-   # Install backend dependencies
-   cd backend
-   npm install
+2. Install frontend dependencies:
+```bash
+cd frontend
+npm install
+```
 
-   # Install frontend dependencies
-   cd ../frontend
-   npm install
-   ```
+3. Install backend dependencies:
+```bash
+cd ../backend
+npm install
+```
 
-3. Start the development servers:
-   ```
-   # Start backend server
-   cd backend
-   npm run dev
+4. Start the development servers:
 
-   # Start frontend server (in a new terminal)
-   cd frontend
-   npm run dev
-   ```
+In the backend directory:
+```bash
+npm run dev
+```
 
-4. Open your browser and navigate to `http://localhost:3000`
+In the frontend directory:
+```bash
+npm run dev
+```
+
+5. Access the application:
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:5000
 
 ## Project Structure
 
 ```
 p2p-book-exchange-app/
-├── backend/
-│   ├── data/              # JSON data files
-│   ├── routes/            # API routes
-│   ├── middleware/        # Express middleware
-│   ├── utils/             # Utility functions
-│   └── server.js          # Main server file
-│
-├── frontend/
-│   ├── components/        # Reusable UI components
-│   ├── pages/             # Next.js pages
-│   ├── styles/            # CSS modules
-│   ├── utils/             # Utility functions
-│   └── public/            # Static assets
-│
-└── README.md              # Project documentation
+├── frontend/           # Next.js frontend application
+│   ├── components/    # React components
+│   ├── pages/        # Next.js pages
+│   ├── styles/       # CSS modules
+│   └── public/       # Static assets
+├── backend/          # Express backend application
+│   ├── routes/      # API routes
+│   ├── data/        # JSON data files
+│   └── server.js    # Express server
+└── README.md        # Project documentation
 ```
-
-## API Endpoints
-
-### Authentication
-- `POST /api/auth/register`: Register a new user
-- `POST /api/auth/login`: Login a user
-- `GET /api/auth/me`: Get current user information
-
-### Books
-- `GET /api/books`: Get all books
-- `GET /api/books/:id`: Get a specific book
-- `POST /api/books`: Add a new book
-- `PUT /api/books/:id`: Update a book
-- `DELETE /api/books/:id`: Delete a book
-- `POST /api/books/status/:id`: Toggle book availability
-
-### Exchanges
-- `GET /api/exchanges`: Get all exchanges
-- `GET /api/exchanges/:id`: Get a specific exchange
-- `POST /api/exchanges`: Create a new exchange
-- `PUT /api/exchanges/:id`: Update an exchange
-- `DELETE /api/exchanges/:id`: Delete an exchange
-
-## User Roles
-
-### Book Owner
-- Can add, edit, and delete books
-- Can manage book availability
-- Can accept or reject exchange requests
-- Can view their book collection
-
-### Book Seeker
-- Can search and browse available books
-- Can request book exchanges
-- Can view their exchange history
-- Can save books for later
 
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
