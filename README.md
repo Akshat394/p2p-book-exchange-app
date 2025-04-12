@@ -2,6 +2,8 @@
 
 A modern web application that facilitates peer-to-peer book exchanges between users. Built with Next.js, Express, and MongoDB.
 
+🌐 [Live Demo](https://p2p-book-exchange.vercel.app) | [Backend API](https://p2p-book-exchange-backend.onrender.com)
+
 ## Features
 
 ### Authentication
@@ -144,6 +146,35 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Next.js team for the amazing framework
 - MongoDB for the database
 - All contributors and users of the application
+
+## Deployment
+
+The application is deployed and accessible at:
+
+- **Frontend**: [https://p2p-book-exchange.vercel.app](https://p2p-book-exchange.vercel.app)
+- **Backend API**: [https://p2p-book-exchange-backend.onrender.com](https://p2p-book-exchange-backend.onrender.com)
+
+### Deployment Instructions
+
+#### Frontend (Vercel)
+
+1. Fork this repository
+2. Create a Vercel account at [vercel.com](https://vercel.com)
+3. Connect your GitHub account to Vercel
+4. Import this repository in Vercel
+5. Configure the following environment variables:
+   - `NEXT_PUBLIC_API_URL`: Your backend API URL
+
+#### Backend (Render)
+
+1. Create a Render account at [render.com](https://render.com)
+2. Create a new Web Service
+3. Connect your GitHub repository
+4. Configure the following environment variables:
+   - `MONGODB_URI`: Your MongoDB connection string
+   - `JWT_SECRET`: Your JWT secret key
+   - `PORT`: 5000
+   - `CORS_ORIGIN`: Your frontend URL
 
 ---
 
