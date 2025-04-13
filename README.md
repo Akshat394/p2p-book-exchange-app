@@ -118,15 +118,15 @@ Seamless book exchange process between users.
 ```
 p2p-book-exchange-app/
 ├── frontend/           # Next.js frontend application
-│   ├── components/    # React components
-│   ├── pages/        # Next.js pages
-│   ├── styles/       # CSS modules
-│   └── public/       # Static assets
-├── backend/          # Express backend application
-│   ├── routes/      # API routes
-│   ├── data/        # JSON data files
-│   └── server.js    # Express server
-└── README.md        # Project documentation
+│   ├── components/     # React components
+│   ├── pages/          # Next.js pages
+│   ├── styles/         # CSS modules
+│   └── public/         # Static assets
+├── backend/            # Express backend application
+│   ├── routes/         # API routes
+│   ├── data/           # JSON data files
+│   └── server.js       # Express server
+└── README.md           # Project documentation
 ```
 
 ## Contributing
