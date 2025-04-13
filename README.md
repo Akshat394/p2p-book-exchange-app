@@ -1,6 +1,6 @@
 # P2P Book Exchange App
 
-A modern web application that facilitates peer-to-peer book exchanges between users. Built with Next.js, Express, and MongoDB.
+A modern web application that facilitates peer-to-peer book exchanges between users. Built with Next.js, Express and React.
 
 🌐 [Live Demo](https://p2p-book-exchange.vercel.app) | [Backend API](https://p2p-book-exchange-backend.onrender.com)
 
@@ -50,7 +50,7 @@ Seamless book exchange process between users.
 
 - **Frontend**: Next.js, React, CSS Modules
 - **Backend**: Node.js, Express
-- **Database**: MongoDB
+- **Database**: MongoDB (can be implemented)
 - **Authentication**: JWT
 - **File Storage**: Local storage with image optimization
 
@@ -59,7 +59,7 @@ Seamless book exchange process between users.
 ### Prerequisites
 
 - Node.js (v14 or higher)
-- MongoDB
+- MongoDB (optional)
 - npm or yarn
 
 ### Installation
@@ -144,7 +144,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Next.js team for the amazing framework
-- MongoDB for the database
+- MongoDB for the database (to be implemented)
 - All contributors and users of the application
 
 ## Deployment
