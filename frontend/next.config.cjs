@@ -2,8 +2,17 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['p2p-book-exchange-backend.onrender.com', 'images.unsplash.com'],
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'p2p-book-exchange-backend.onrender.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      }
+    ],
   },
   output: 'export',
   distDir: 'out',
