@@ -1,5 +1,5 @@
 [build]
-  command = "cd frontend && npm install && npm run build"
+  command = "cd frontend && npm install && npm run clean && npm run build"
   publish = "frontend/out"
   base = "."
 
@@ -7,6 +7,7 @@
   NEXT_PUBLIC_API_URL = "https://p2p-book-exchange-backend.onrender.com/api"
   NODE_VERSION = "18"
   NPM_FLAGS = "--legacy-peer-deps"
+  NODE_ENV = "production"
 
 [[redirects]]
   from = "/*"
