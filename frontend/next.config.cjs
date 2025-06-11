@@ -6,7 +6,7 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  distDir: 'dist',
+  distDir: 'out',
   trailingSlash: true,
   poweredByHeader: false,
   compress: true,
