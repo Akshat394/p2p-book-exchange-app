@@ -1,7 +1,7 @@
 [build]
-  command = "npm run build"
-  publish = "out"
-  base = "frontend"
+  command = "cd frontend && npm install && npm run build"
+  publish = "frontend/out"
+  base = "."
 
 [build.environment]
   NEXT_PUBLIC_API_URL = "https://p2p-book-exchange-backend.onrender.com/api"
