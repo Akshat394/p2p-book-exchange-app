@@ -1,5 +1,5 @@
 [build]
-  command = "cd frontend && npm install && npm run clean && npm run build"
+  command = "cd frontend && npm install --legacy-peer-deps && npm run build"
   publish = "frontend/out"
   base = "."
 
@@ -8,6 +8,7 @@
   NODE_VERSION = "18"
   NPM_FLAGS = "--legacy-peer-deps"
   NODE_ENV = "production"
+  CI = "false"
 
 [[redirects]]
   from = "/*"
