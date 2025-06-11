@@ -1,30 +1,27 @@
 {
-  "name": "frontend",
-  "version": "1.0.0",
+  "name": "p2p-book-exchange-frontend",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "rimraf .next out",
     "build": "next build",
-    "postbuild": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rimraf .next out",
+    "prebuild": "npm run clean"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "axios": "^1.6.0",
-    "next": "13.5.6",
-    "normalize.css": "^8.0.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "axios": "^1.6.7",
+    "react-icons": "^5.0.1",
+    "react-toastify": "^10.0.4"
   },
   "devDependencies": {
-    "rimraf": "^3.0.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "rimraf": "^5.0.5",
     "cross-env": "^7.0.3"
-  },
-  "engines": {
-    "node": "18.x"
   }
 }
