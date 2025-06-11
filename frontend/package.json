@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rimraf .next out",
+    "clean": "node ./node_modules/rimraf/bin.js .next out",
     "prebuild": "npm run clean"
   },
   "dependencies": {

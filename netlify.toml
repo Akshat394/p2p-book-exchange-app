@@ -1,11 +1,11 @@
 [build]
-  command = "cd frontend && npm install --legacy-peer-deps && npm run build"
+  command = "cd frontend && npm install --legacy-peer-deps && npm install -g rimraf && npm run build"
   publish = "frontend/out"
   base = "."
 
 [build.environment]
   NEXT_PUBLIC_API_URL = "https://p2p-book-exchange-backend.onrender.com/api"
-  NODE_VERSION = "18"
+  NODE_VERSION = "18.17.0"
   NPM_FLAGS = "--legacy-peer-deps"
   NODE_ENV = "production"
   CI = "false"
@@ -22,4 +22,4 @@
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self' https://p2p-book-exchange-backend.onrender.com https://images.unsplash.com; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://p2p-book-exchange-backend.onrender.com https://images.unsplash.com;" 
+    Content-Security-Policy = "default-src 'self' https://p2p-book-exchange-backend.onrender.com https://images.unsplash.com; img-src 'self' data: https://images.unsplash.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';" 
