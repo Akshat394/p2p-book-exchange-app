@@ -5,7 +5,8 @@ const nextConfig = {
     domains: ['p2p-book-exchange-backend.onrender.com', 'images.unsplash.com'],
     unoptimized: true,
   },
-  output: 'standalone',
+  output: 'export',
+  distDir: 'dist',
   poweredByHeader: false,
   compress: true,
   env: {

@@ -5,6 +5,7 @@
   "installCommand": "npm install",
   "framework": "nextjs",
   "regions": ["sin1"],
+  "outputDirectory": "dist",
   "routes": [
     {
       "src": "/(.*)",
